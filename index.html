@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#000000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>جوال ديمتري</title>
+<meta name="description" content="مافي مشكلة">
+<meta property="og:type" content="website">
+<meta property="og:title" content="جوال ديمتري">
+<meta property="og:description" content="مافي مشكلة">
+<meta property="og:url" content="https://engfaialluhiby-glitch.github.io/dimitri-phone/">
+<meta property="og:image" content="https://engfaialluhiby-glitch.github.io/dimitri-phone/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="جوال ديمتري">
+<meta name="twitter:image" content="https://engfaialluhiby-glitch.github.io/dimitri-phone/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone" id="phone">
+  <button class="power-btn" id="powerBtn" aria-label="قفل"></button>
+  <div class="screen" id="screen">
+
+    <div class="statusbar" id="statusbar">
+      <span class="sb-time clock"></span>
+      <span class="sb-right">
+        <svg viewBox="0 0 18 12" class="sb-ico"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1" opacity=".35"/></svg>
+        <svg viewBox="0 0 16 12" class="sb-ico"><path d="M8 11.5l2.2-2.6a3.2 3.2 0 00-4.4 0zM3.6 6.6l1.4 1.6a4.6 4.6 0 016 0l1.4-1.6a6.8 6.8 0 00-8.8 0zM.8 3.4l1.4 1.6a9 9 0 0111.6 0l1.4-1.6a11.1 11.1 0 00-14.4 0z"/></svg>
+        <span class="battery"><i></i></span>
+      </span>
+    </div>
+
+    <!-- lock -->
+    <section class="lock" id="lock">
+      <div class="lock-top">
+        <svg viewBox="0 0 24 24" class="lock-ico"><path d="M7 10V7a5 5 0 0110 0v3h1a1 1 0 011 1v9a1 1 0 01-1 1H6a1 1 0 01-1-1v-9a1 1 0 011-1zm2 0h6V7a3 3 0 00-6 0z"/></svg>
+        <div class="lock-date" id="lockDate"></div>
+        <div class="lock-time clock"></div>
+        
+      </div>
+
+      <div class="lock-notifs" id="lockNotifs"></div>
+
+      <div class="lock-bottom">
+        <span class="round-btn"><svg viewBox="0 0 24 24"><path d="M9 2h6l-1 5h-4zM8 8h8l-1.5 4v9a1 1 0 01-1 1h-3a1 1 0 01-1-1v-9z"/></svg></span>
+        <span class="swipe-hint">اسحب للأعلى للفتح</span>
+        <span class="round-btn"><svg viewBox="0 0 24 24"><path d="M9 4l-1.5 2H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V8a2 2 0 00-2-2h-3.5L15 4zm3 4.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 2a2.5 2.5 0 100 5 2.5 2.5 0 000-5z"/></svg></span>
+      </div>
+    </section>
+
+    <!-- home -->
+    <section class="home" id="home">
+      <div class="home-grid" id="homeGrid"></div>
+      <div class="page-dots"><i class="on"></i><i></i></div>
+      <div class="dock" id="dock"></div>
+    </section>
+
+    <!-- snapchat -->
+    <section class="app snap" id="app-snap">
+      <img src="img/snap.jpg" alt="" class="snap-img">
+      <button class="snap-close" data-close>
+        <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </button>
+      <div class="snap-tools">
+        <span>T</span>
+        <span><svg viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16zM14 6l3 3" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg></span>
+        <span><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5" fill="none" stroke="#fff" stroke-width="2"/><path d="M9 14c1.5 1.5 4.5 1.5 6 0" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/><circle cx="9.5" cy="10" r="1.2" fill="#fff"/><circle cx="14.5" cy="10" r="1.2" fill="#fff"/></svg></span>
+        <span><svg viewBox="0 0 24 24"><path d="M14 4l6 6-9 9H5v-6z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg></span>
+      </div>
+      <div class="snap-caption" dir="ltr">just say "<bdi dir="rtl">مافي مشكلة</bdi>" and move on</div>
+      <div class="snap-bottom">
+        <span class="snap-save"><svg viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+        <span class="snap-story">قصتي</span>
+        <span class="snap-send">إرسال إلى <svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg></span>
+      </div>
+    </section>
+
+    <!-- tiktok -->
+    <section class="app tt" id="app-tiktok">
+      <div class="tt-bg" style="background-image:url(img/tiktok-poster.jpg)"></div>
+      <video id="ttVideo" src="media/tiktok.mp4" poster="img/tiktok-poster.jpg" playsinline loop preload="metadata"></video>
+      <div class="tt-paused" id="ttPaused"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#fff"/></svg></div>
+      <div class="tt-top">
+        <button data-close class="tt-back"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+        <div class="tt-tabs"><span>متابَعون</span><span class="on">لك</span></div>
+        <svg viewBox="0 0 24 24" class="tt-search"><circle cx="11" cy="11" r="6.5" fill="none" stroke="#fff" stroke-width="2.2"/><path d="M16 16l4 4" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>
+      </div>
+      <div class="tt-side">
+        <div class="tt-av"><img src="img/av/dimitri.jpg" alt=""><b>+</b></div>
+        <div><svg viewBox="0 0 24 24"><path d="M12 21s-8-5.2-8-11a4.6 4.6 0 018-3.1A4.6 4.6 0 0120 10c0 5.8-8 11-8 11z" fill="#fff"/></svg><small>21.7K</small></div>
+        <div><svg viewBox="0 0 24 24"><path d="M12 3c5 0 9 3.6 9 8s-4 8-9 8c-1 0-2-.1-2.9-.4L4 20l1.3-3.8A7.6 7.6 0 013 11c0-4.4 4-8 9-8z" fill="#fff"/></svg><small>644</small></div>
+        <div><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z" fill="#fff"/></svg><small>2,310</small></div>
+        <div><svg viewBox="0 0 24 24"><path d="M14 4l7 7-7 7v-4c-5 0-8 1.5-11 5 1-5.5 4-10 11-11z" fill="#fff"/></svg><small>187</small></div>
+        <div class="tt-disc"><img src="img/av/dimitri.jpg" alt=""></div>
+      </div>
+      <div class="tt-info">
+        <b>dimitri.restova</b>
+        <div class="tt-cap">تهاوشو ال fbi بس مافي مشكلة</div>
+        <div class="tt-sound"><svg viewBox="0 0 24 24"><path d="M9 17V5l10-2v12" fill="none" stroke="#fff" stroke-width="2"/><circle cx="6.5" cy="17" r="2.5" fill="#fff"/><circle cx="16.5" cy="15" r="2.5" fill="#fff"/></svg><span>الصوت الأصلي - dimitri.restova</span></div>
+      </div>
+      <div class="tt-progress"><i id="ttBar"></i></div>
+      <nav class="tt-nav">
+        <span class="on">الرئيسية</span><span>الأصدقاء</span><span class="tt-plus">+</span><span>البريد</span><span>الملف</span>
+      </nav>
+    </section>
+
+    <!-- x -->
+    <section class="app xapp" id="app-x">
+      <header class="x-head">
+        <button data-close><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+        <div>
+          <b>Dimitri Restova</b>
+          <small>4 منشورات</small>
+        </div>
+        <span class="x-dots">•••</span>
+      </header>
+      <div class="x-feed scroll" id="xFeed"></div>
+    </section>
+
+    <!-- instagram -->
+    <section class="app insta" id="app-insta">
+      <header class="ig-head">
+        <button data-close><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+        <b>dimitri.restova</b>
+        <span class="ig-dots">•••</span>
+      </header>
+      <div class="ig-body scroll">
+        <div class="ig-top">
+          <img src="img/av/dimitri.jpg" alt="" class="ig-av">
+          <div class="ig-stats">
+            <div><b>9</b><small>منشورات</small></div>
+            <div><b>12.8K</b><small>متابعون</small></div>
+            <div><b>61</b><small>متابَع</small></div>
+          </div>
+        </div>
+        <div class="ig-name">Dimitri Restova</div>
+        <div class="ig-bio">مافي مشكلة</div>
+        <div class="ig-btns"><span>متابعة</span><span>مراسلة</span></div>
+        <div class="ig-tabs"><span class="on"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4zM4 9.3h16M4 14.7h16M9.3 4v16M14.7 4v16" fill="none" stroke="#fff" stroke-width="1.6"/></svg></span><span><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="3" fill="none" stroke="#8e8e93" stroke-width="1.6"/><path d="M10 9v6l5-3z" fill="#8e8e93"/></svg></span></div>
+        <div class="ig-grid" id="igGrid"></div>
+      </div>
+    </section>
+
+    <!-- whatsapp -->
+    <section class="app wa" id="app-wa">
+      <div class="wa-list" id="waList">
+        <header class="wa-top">
+          <button data-close class="wa-back"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#e9edef" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+          <span class="wa-cam"><svg viewBox="0 0 24 24"><path d="M9 4l-1.5 2H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V8a2 2 0 00-2-2h-3.5L15 4zm3 4.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9z" fill="#e9edef"/></svg></span>
+        </header>
+        <h1 class="wa-title">الدردشات</h1>
+        <div class="wa-search">بحث</div>
+        <div class="wa-filters"><span class="on">الكل</span><span>غير مقروءة</span><span>المفضلة</span><span>المجموعات</span></div>
+        <div class="wa-rows scroll" id="waRows"></div>
+      </div>
+      <div class="wa-chat" id="waChat">
+        <header class="wa-chat-head">
+          <button class="wa-back" id="waBack"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#e9edef" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+          <span class="wa-av" id="waChatAv"></span>
+          <div class="wa-chat-name"><b id="waChatName"></b><small id="waChatSub"></small></div>
+          <svg viewBox="0 0 24 24" class="wa-h-ico"><rect x="2" y="6" width="13" height="12" rx="2" fill="none" stroke="#e9edef" stroke-width="2"/><path d="M15 10l6-3v10l-6-3" fill="none" stroke="#e9edef" stroke-width="2" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 24 24" class="wa-h-ico"><path d="M6.6 10.8a15.5 15.5 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z" fill="none" stroke="#e9edef" stroke-width="1.8"/></svg>
+        </header>
+        <div class="wa-msgs scroll" id="waMsgs"></div>
+        <div class="wa-input" id="waInput">
+          <span class="wa-plus">+</span>
+          <div class="wa-field">رسالة</div>
+          <svg viewBox="0 0 24 24" class="wa-h-ico"><rect x="9" y="3" width="6" height="11" rx="3" fill="none" stroke="#e9edef" stroke-width="2"/><path d="M5 11a7 7 0 0014 0M12 18v3" fill="none" stroke="#e9edef" stroke-width="2"/></svg>
+        </div>
+        <div class="wa-blocked" id="waBlocked">إلغاء الحظر</div>
+      </div>
+    </section>
+
+    <!-- phone -->
+    <section class="app calls" id="app-phone">
+      <header class="c-head">
+        <button data-close><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#0a84ff" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+        <div class="c-seg"><span class="on">الكل</span><span>الفائتة</span></div>
+        <span class="c-edit">تعديل</span>
+      </header>
+      <h1 class="c-title">الأخيرة</h1>
+      <div class="c-rows scroll" id="callRows"></div>
+      <nav class="c-tabs"><span>المفضلة</span><span class="on">الأخيرة</span><span>جهات الاتصال</span><span>لوحة المفاتيح</span></nav>
+    </section>
+
+    <!-- calculator -->
+    <section class="app calc" id="app-calc">
+      <button data-close class="calc-back"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+      <div class="calc-screen"><div class="calc-expr" id="calcExpr"></div><div class="calc-out" id="calcOut">0</div></div>
+      <div class="calc-keys" id="calcKeys"></div>
+    </section>
+
+    <!-- weather -->
+    <section class="app weather" id="app-weather">
+      <button data-close class="w-back"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+      <div class="w-body scroll">
+        <div class="w-now">
+          <small>موقعي</small>
+          <h1>لوس سانتوس</h1>
+          <div class="w-temp">24°</div>
+          <p>غائم جزئيًا</p>
+          <p>العظمى: 29° الصغرى: 17°</p>
+        </div>
+        <div class="w-card">
+          <p class="w-note">غيوم متفرقة الليلة، والرياح تنشط بعد منتصف الليل حول المناطق الجبلية.</p>
+          <div class="w-hours" id="wHours"></div>
+        </div>
+        <div class="w-card">
+          <p class="w-label">توقعات 10 أيام</p>
+          <div id="wDays"></div>
+        </div>
+        <div class="w-grid">
+          <div class="w-card"><p class="w-label">الرطوبة</p><b>48%</b><small>نقطة الندى 12° الآن.</small></div>
+          <div class="w-card"><p class="w-label">الرياح</p><b>14 كم/س</b><small>هبات تصل إلى 26 كم/س.</small></div>
+          <div class="w-card"><p class="w-label">الرؤية</p><b>9 كم</b><small>رؤية جيدة.</small></div>
+          <div class="w-card"><p class="w-label">الغروب</p><b>5:41 م</b><small>الشروق: 6:37 ص</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- photos -->
+    <section class="app photos" id="app-photos">
+      <header class="ph-head">
+        <button data-close><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#0a84ff" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+        <div>
+          <h1>المكتبة</h1>
+          <small id="phCount"></small>
+        </div>
+        <span class="ph-select">تحديد</span>
+      </header>
+      <div class="ph-grid scroll" id="phGrid"></div>
+      <nav class="ph-tabs"><span class="on">المكتبة</span><span>لك</span><span>الألبومات</span><span>بحث</span></nav>
+      <div class="viewer" id="viewer">
+        <button class="v-close" id="vClose"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+        <span class="v-count" id="vCount"></span>
+        <div class="v-stage" id="vStage"></div>
+        <button class="v-nav v-prev" id="vPrev"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+        <button class="v-nav v-next" id="vNext"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+      </div>
+    </section>
+
+    <!-- files -->
+    <section class="app files light" id="app-files">
+      <div class="f-page f-main">
+        <div class="f-nav"><button data-close><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#0a84ff" stroke-width="2.4" stroke-linecap="round"/></svg> الرئيسية</button></div>
+        <h1 class="f-title">تصفح</h1>
+        <div class="f-search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="#8e8e93" stroke-width="2.2"/><path d="M16 16l4 4" stroke="#8e8e93" stroke-width="2.2" stroke-linecap="round"/></svg> بحث</div>
+        <div class="f-loc">
+          <svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5" fill="none" stroke="#0a84ff" stroke-width="2"/><circle cx="12" cy="18" r="1" fill="#0a84ff"/></svg>
+          <span>على الـ iPhone</span>
+        </div>
+        <h2 class="f-sub">المجلدات</h2>
+        <div class="f-grid" id="fFolders"></div>
+        <h2 class="f-sub">الملفات</h2>
+        <div class="f-grid" id="fFiles"></div>
+      </div>
+      <div class="f-page f-folder" id="fFolder">
+        <div class="f-nav"><button id="fBack"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#0a84ff" stroke-width="2.4" stroke-linecap="round"/></svg> تصفح</button></div>
+        <h1 class="f-folder-title" id="fFolderTitle"></h1>
+        <div class="f-folder-sub" id="fFolderSub"></div>
+        <div class="f-grid" id="fFolderGrid"></div>
+      </div>
+    </section>
+
+    <!-- messages -->
+    <section class="app sms" id="app-sms">
+      <div class="sms-list">
+        <div class="sms-nav"><button data-close><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#0a84ff" stroke-width="2.4" stroke-linecap="round"/></svg></button><span>تعديل</span></div>
+        <h1 class="sms-title">الرسائل</h1>
+        <div class="sms-search">بحث</div>
+        <div class="sms-rows scroll" id="smsRows"></div>
+      </div>
+      <div class="sms-chat">
+        <div class="sms-head">
+          <button class="back" id="smsBack"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#0a84ff" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+          <span class="sms-av" id="smsAv"></span>
+          <b id="smsName"></b>
+        </div>
+        <div class="sms-msgs scroll" id="smsMsgs"></div>
+        <div class="sms-input"><span>+</span><div>رسالة نصية</div></div>
+      </div>
+    </section>
+
+    <!-- camera -->
+    <section class="app camera" id="app-camera">
+      <div class="cam-top">
+        <button data-close class="cam-close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+        <svg viewBox="0 0 24 24"><path d="M13 2L5 14h6l-1 8 8-12h-6z" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="3" fill="none" stroke="#fff" stroke-width="1.8"/></svg>
+      </div>
+      <div class="cam-view">
+        <img src="img/camera.jpg" alt="">
+        <div class="zoom"><span>.5</span><span class="on">1x</span><span>3</span></div>
+        <div class="cam-flash" id="camFlash"></div>
+      </div>
+      <div class="cam-modes"><span>بورتريه</span><span class="on">صورة</span><span>فيديو</span></div>
+      <div class="cam-bottom">
+        <span class="cam-thumb" id="camThumb"></span>
+        <button class="cam-shutter" id="camShutter"><i></i></button>
+        <span class="cam-flip"><svg viewBox="0 0 24 24"><path d="M4 9a8 8 0 0114-3l2 2M20 15a8 8 0 01-14 3l-2-2M20 4v4h-4M4 20v-4h4" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+    </section>
+
+    <!-- notes -->
+    <section class="app notes" id="app-notes">
+      <div class="nt-list" id="ntList">
+        <div class="nt-nav"><button data-close><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#e5b52a" stroke-width="2.4" stroke-linecap="round"/></svg> المجلدات</button></div>
+        <h1>الملاحظات</h1>
+        <div class="nt-search">بحث</div>
+        <div class="nt-rows" id="ntRows"></div>
+        <div class="nt-foot"><span id="ntCount"></span></div>
+      </div>
+      <div class="nt-page" id="ntPage">
+        <div class="nt-nav"><button id="ntBack"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#e5b52a" stroke-width="2.4" stroke-linecap="round"/></svg> الملاحظات</button></div>
+        <div class="nt-body scroll" id="ntBody"></div>
+      </div>
+    </section>
+
+    <!-- overlays -->
+    <div class="bursts" id="bursts"></div>
+
+    <div class="mv" id="mv">
+      <div class="mv-top">
+        <button id="mvClose"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/></svg></button>
+        <b id="mvTitle"></b>
+        <span class="mv-n" id="mvN"></span>
+      </div>
+      <div class="mv-stage" id="mvStage"></div>
+      <div class="mv-arrows" id="mvArrows">
+        <button id="mvNext"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+        <button id="mvPrev"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+      </div>
+      <div class="mv-hint" id="mvHint"></div>
+    </div>
+
+    <div class="faceid" id="faceid">
+      <div class="faceid-box">
+        <svg viewBox="0 0 48 48" class="faceid-ico"><path d="M4 14V8a4 4 0 014-4h6M34 4h6a4 4 0 014 4v6M44 34v6a4 4 0 01-4 4h-6M14 44H8a4 4 0 01-4-4v-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M17 17v4M31 17v4M24 18v9h-2M18 32c3.5 3 8.5 3 12 0" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span id="faceidText">Face ID</span>
+      </div>
+    </div>
+
+    <div class="alert" id="alert">
+      <div class="alert-box">
+        <svg viewBox="0 0 24 24" class="alert-lock"><path d="M7 10V7a5 5 0 0110 0v3h1a1 1 0 011 1v9a1 1 0 01-1 1H6a1 1 0 01-1-1v-9a1 1 0 011-1zm2 0h6V7a3 3 0 00-6 0z" fill="none" stroke="#ff3b30" stroke-width="1.8"/></svg>
+        <b id="alertTitle"></b>
+        <p id="alertText"></p>
+        <button id="alertOk">حسنًا</button>
+      </div>
+    </div>
+
+    <div class="home-bar" id="homeBar"><i></i></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
