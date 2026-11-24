@@ -719,7 +719,7 @@ const threads = [
     preview: 'فيديو',
     msgs: [
       { day: 'أمس 3:02 ص' },
-      { video: 'media/ed.mp4', poster: 'img/ed-poster.jpg', dur: '2:57', name: 'تسجيل' }
+      { video: 'ed.mp4', poster: 'img/ed-poster.jpg', dur: '2:57', name: 'تسجيل' }
     ]
   },
   {
@@ -837,22 +837,22 @@ const folders = [
   {
     name: 'تسجيلات المحكمة الفدرالية فواز جنازه',
     items: [
-      { name: 'ليون في المحكمة الفدرالية', kind: 'audio', src: 'media/court1.mp3', dur: '1:44' },
-      { name: 'طارق وليون بالمحكمة', kind: 'audio', src: 'media/court2.mp3', dur: '1:19' },
-      { name: 'ديمتري مع ليون', kind: 'audio', src: 'media/court3.mp3', dur: '1:27' }
+      { name: 'ليون في المحكمة الفدرالية', kind: 'audio', src: 'court1.mp3', dur: '1:44' },
+      { name: 'طارق وليون بالمحكمة', kind: 'audio', src: 'court2.mp3', dur: '1:19' },
+      { name: 'ديمتري مع ليون', kind: 'audio', src: 'court3.mp3', dur: '1:27' }
     ]
   },
   {
     name: 'تسجيل مكالمة المجانين',
     items: [
-      { name: 'فواز يلمح لديمتري انه هو الجنازه', kind: 'audio', src: 'media/call1.mp3', dur: '1:31' },
-      { name: 'ديمتري انجلط منهم', kind: 'audio', src: 'media/call2.mp3', dur: '2:36' }
+      { name: 'فواز يلمح لديمتري انه هو الجنازه', kind: 'audio', src: 'call1.mp3', dur: '1:31' },
+      { name: 'ديمتري انجلط منهم', kind: 'audio', src: 'call2.mp3', dur: '2:36' }
     ]
   },
   {
     name: 'ذكريات ديمتري',
     items: [
-      { name: 'فلاش باك', kind: 'video', src: 'media/flashback.mp4', poster: 'img/flashback-poster.jpg', dur: '2:37' }
+      { name: 'فلاش باك', kind: 'video', src: 'flashback.mp4', poster: 'img/flashback-poster.jpg', dur: '2:37' }
     ]
   },
   { name: 'الوحدة المغلقة', locked: true, count: '11 عنصر' },
@@ -867,7 +867,7 @@ const folders = [
 const looseFiles = [
   { name: 'فصل متعب', src: 'img/files/fasl-metab.jpg', doc: true },
   { name: 'تقرير مجنون الولاية', src: 'img/files/majnoon.jpg', doc: true, wide: true },
-  { name: 'مقابلة فيكتور وفسدة FBI', kind: 'audio', src: 'media/victor.mp3', dur: '2:20' },
+  { name: 'مقابلة فيكتور وفسدة FBI', kind: 'audio', src: 'victor.mp3', dur: '2:20' },
   { name: 'لوحة الأدلة', src: 'img/files/board.jpg', doc: true, wide: true }
 ];
 
